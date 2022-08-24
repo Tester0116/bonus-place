@@ -1,0 +1,329 @@
+.couponProfile {
+    background-color: white;
+    padding-bottom: 90px;
+
+    .container {
+        .couponProfile__block {
+            display: flex;
+            gap: 32px;
+            margin-bottom: 24px;
+
+            .couponProfile__info {
+                width: 668px;
+                max-width: 668px;
+                .corousel {
+                    width: 100%;
+                }
+
+                .companyProfile__btns {
+                    height: 49px;
+                    max-width: 440px;
+                    border-radius: 12px;
+                    padding: 8px;
+                    background: #edf1fd;
+                    display: flex;
+                    gap: 10px;
+                    margin: 24px 0;
+
+                    .bnt__stock {
+                        width: 136px;
+                        height: 33px;
+                        border-radius: 8px;
+                        font: 600 14px/150% 'Inter';
+                        color: #4b5fa5;
+                        transition: all 0.5s;
+
+                        &.active {
+                            background: #ffffff;
+                            transition: all 0.5s;
+                        }
+                    }
+                }
+            }
+
+            .couponProfile__buy {
+                max-width: 466px;
+                display: flex;
+                flex-direction: column;
+                gap: 36px;
+
+                .brend {
+                    display: flex;
+                    align-items: center;
+                    gap: 16px;
+
+                    .brend__text {
+                        color: #171717;
+                        font: 700 20px/24px 'Inter';
+                    }
+
+                    img {
+                        width: 72px;
+                        height: 72px;
+                        // border: 2px solid #EDF1FD;
+                        border-radius: 12px;
+                    }
+                }
+
+                .descr {
+                    .descr-title {
+                        font: 400 15px/150% 'Inter';
+                        color: #98949E;
+                        margin-bottom: 6px;
+                    }
+
+                    .descr-descr {
+                        font: 500 16px/150% 'Inter';
+                        color: #181818;
+                    }
+                }
+
+                .price {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 8px;
+
+                    .price-ticket {
+                        display: flex;
+                        align-items: center;
+
+                        .ticket__title {
+                            font: 400 18px/22px 'Inter';
+                            color: #98949E;
+                            width: 166px;
+                            padding-left: 10px;
+                        }
+
+                        .ticket__number {
+                            padding: 8px 20px;
+                            background: #F7F7F7;
+                            border-radius: 12px;
+                            font: 600 18px/22px 'Inter';
+                            color: #2C29A5;
+
+                            span {
+                                font: 500 18px/22px 'Inter';
+                                text-decoration-line: line-through;
+                                color: #98949E;
+                                margin-left: 16px;
+                            }
+                        }
+                    }
+                }
+
+                .btns {
+                    display: flex;
+                    gap: 12px;
+
+                    .btn__buy {
+                        width: 300px;
+                        height: 56px;
+                        background: #4B5FA5;
+                        border-radius: 12px;
+                        font: 500 16px/125% 'Inter';
+                        color: #FFFFFF;
+                        transition: 0.4s;
+
+                        &:hover {
+                            transform: translateY(-5px);
+                        }
+                    }
+
+                    .buy__favor {
+                        width: 56px;
+                        height: 56px;
+                        background: #EDF1FD;
+                        border-radius: 12px;
+                        transition: 0.4s;
+
+                        &:hover {
+                            transform: translateY(-5px);
+                        }
+                    }
+                }
+
+                .period {
+                    display: flex;
+                    flex-direction: column;
+
+                    .period__title {
+                        font: 400 15px/150% "Inter";
+                        color: #98949E;
+                        margin-bottom: 5px;
+                    }
+
+                    .period__block {
+                        display: flex;
+                        gap: 24px;
+                        color: #181818;
+                        font: 600 18px/22px "Inter";
+
+                    }
+
+                    .tikets {
+                        margin-top: 24px;
+                        display: flex;
+                        gap: 16px;
+                        flex-direction: column;
+
+                        .tiket {
+                            display: flex;
+                            gap: 16px;
+
+                            img {
+                                width: 24px;
+                                height: 24px;
+                            }
+
+                            .tiket__text {
+                                font: 400 15px/150% "Inter";
+                                color: #98949E;
+                            }
+                        }
+                    }
+                }
+
+                .social__media {
+                    p {
+                        font: 400 15px/150% "Inter";
+                        color: #4F70E2;
+                        margin-bottom: 8px;
+                    }
+
+                    .media {
+                        display: flex;
+                        gap: 16px;
+                        flex-wrap: nowrap;
+
+                        .media__block {
+                            transition: 0.4s;
+                        }
+
+                        .media__block:hover {
+                            transform: translateY(-5px);
+                        }
+                    }
+                }
+            }
+        }
+
+        .ticket__block {
+            width: 100%;
+            height: auto;
+            margin-bottom: 34px;
+
+            .ticket__title {
+                color: #181818;
+                font: 700 24px/29px "Inter";
+                margin-bottom: 12px;
+            }
+
+            .ticket__block {
+                width: 100%;
+                display: grid;
+                gap: 8px;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                grid-template-rows: 1fr;
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .couponProfile {
+        .container {
+            .couponProfile__block {
+                .couponProfile__info {
+                    max-width: 500px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .couponProfile {
+        .container {
+            .couponProfile__block {
+                flex-direction: column;
+
+                .couponProfile__info {
+                    max-width: 100%;
+
+                    .corousel {
+                        width: 100%;
+                    }
+
+                    .companyProfile__btns {
+                        max-width: 100%;
+
+                        .bnt__stock {
+                            width: 33%;
+                        }
+                    }
+                }
+
+                .couponProfile__buy {
+                    max-width: 100%;
+                }
+            }
+
+            .ticket__block {
+                .ticket__block {
+                    grid-template-columns: 1fr 1fr;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .couponProfile {
+        .container {
+            .couponProfile__block {
+                .couponProfile__info {
+                    max-width: 100%;
+
+                    .companyProfile__btns {
+                        .bnt__stock {
+                            font: 600 12px 'Inter';
+                        }
+                    }
+                }
+              
+  
+                .couponProfile__buy {
+                    .price {
+                        flex-direction: column;
+                        gap: 20px;
+
+                        .price-ticket {
+                            flex-direction: column;
+                            align-items: flex-start;
+                            gap: 8px;
+                        }
+                    }
+
+                    .btns {
+                        .buy__favor {
+                            min-width: 56px;
+
+                        }
+                    }
+                    .period {
+                        .period__block {
+                            font: 600 16px/22px "Inter";
+                        }
+                    }
+                }
+            }
+
+            .ticket__block {
+                .ticket__block {
+                    grid-template-columns: 1fr;
+                }
+            }
+        }
+    }
+
+}

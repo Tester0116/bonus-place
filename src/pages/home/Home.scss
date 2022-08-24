@@ -1,0 +1,63 @@
+.home {
+  background-color: white;
+  padding: 20px 0 101px 0;
+
+  .container {
+    .couponsList__title {
+      margin: 24px 0;
+      color: #181818;
+      font: 700 24px/29px "Inter";
+    }
+    .couponList__btn{
+      max-width: 152px;
+      margin: 24px auto 0;
+    }
+    .home__categories {
+      display: flex;
+      gap: 16px;
+      flex-wrap: nowrap;
+      overflow: scroll;
+      &::-webkit-scrollbar {
+        width: 0;
+        height: 0;
+      }
+    }
+
+    .carousel {
+      margin-top: 40px;
+    }
+
+    .blocks__img {
+      width: 100%;
+      display: grid;
+      gap: 14px;
+      margin-top: 60px;
+      grid-template-columns: 1fr 1fr 1fr;
+
+      img {
+        width: 100%;
+        height: auto;
+        border-radius: 16px;
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .home {
+    .container {
+
+      .blocks__img {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow: scroll;
+
+        &::-webkit-scrollbar {
+          width: 0;
+          height: 0;
+        }
+      }
+    }
+  }
+}
+

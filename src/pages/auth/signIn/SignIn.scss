@@ -1,0 +1,48 @@
+.signIn {
+  width: 100%;
+  padding: 110px 0;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__form {
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
+    &--title {
+      color: #181818;
+      font: 700 20px/24px 'Inter';
+      margin-bottom: 16px;
+    }
+
+    &--item {
+      background: white;
+      border: 1px solid #f7f1fe;
+      border-radius: 12px;
+      width: 316px;
+      height: 45px;
+      padding: 12px 16px;
+      display: flex;
+      position: relative;
+      align-items: center;
+      margin-bottom: 5px;
+
+      &.err {
+        border: 1px solid #e31b4b;
+      }
+    }
+    &--input {
+      width: 100%;
+      &::placeholder {
+        font: 400 15px/150% 'Inter';
+        color: #98949e;
+      }
+    }
+    &--link {
+      margin-top: 20px;
+      text-align: center;
+      font: 400 14px/150% 'Inter';
+      color: #4b5fa5;
+    }
+  }
+}

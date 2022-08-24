@@ -1,0 +1,68 @@
+$purple: #4b5fa5;
+
+.confirm {
+  width: 100%;
+  padding: 110px 0;
+  background-color: #e5e5e5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  & > .container {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    max-width: 316px;
+
+    &--title {
+      color: #181818;
+      font: 700 20px/24px 'Inter';
+      margin-bottom: 24px;
+    }
+    &--phone {
+      color: #171717;
+      font: 600 18px/22px 'Inter';
+    }
+    &--change-phone {
+      color: $purple;
+      font: 400 14px/150% 'Inter';
+    }
+    &--input {
+      height: 44px;
+      margin-top: 24px;
+      background: #ffffff;
+      border: 1px solid #f7f1fe;
+      border-radius: 12px;
+      padding: 12px 16px;
+
+      &::placeholder {
+        font: 400 14px/150% 'Inter';
+        color: #98949e;
+      }
+    }
+    &--submit {
+      margin-top: 12px;
+    }
+    &--sms {
+      color: $purple;
+      font: 400 14px/150% 'Inter';
+      text-align: center;
+      margin-top: 24px;
+    }
+    &--reset-btn {
+      margin-top: 6px;
+      border: 1px solid $purple;
+      cursor: not-allowed;
+      background: transparent;
+      pointer-events: all;
+      color: $purple;
+      &.active {
+        cursor: pointer;
+      }
+    }
+  }
+}

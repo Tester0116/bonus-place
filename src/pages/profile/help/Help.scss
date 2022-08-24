@@ -1,0 +1,49 @@
+#help{
+    .help__title{
+        color: #181818;
+        font: 700 24px/29px "Inter";
+        margin-bottom: 16px;
+    }
+    .help__inner{
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        label {
+            cursor: pointer;
+            input {
+                display: none;
+            }
+            .card {
+                padding: 20px 16px 16px 16px;
+                border: 1px solid #D4E3FF;
+                border-radius: 16px;
+                overflow: hidden;
+                transition: 0.5s;
+                .card__inner{
+                    display: flex;
+                    justify-content: space-between;
+                    .card__title{
+                        font: 700 15px/150% "Inter";
+                        color: #171717;
+                    }
+                }
+                p{
+                    display: none;
+                    font: 400 14px/150% "Inter";
+                    color: #181818;
+                    margin-top: 16px;
+                }
+            }
+        }
+        label input:checked + .card{
+            p{
+                display: block;
+            }
+            .card__inner{
+                img{
+                    transform: rotate(180deg);
+                }
+            }
+        }
+    }
+}

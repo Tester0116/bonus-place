@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  list-style-type: none;
+
+  /* custom scrollbar */
+  &::-webkit-scrollbar {
+    background-color: transparent;
+    width: 1.1rem;
+    height: 0;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #a8bbbf;
+    border-radius: 20px;
+    border: 6px solid transparent;
+    background-clip: content-box;
+  }
+}
+
+body {
+  background: #e5e5e5;
+  font-family: 'Inter';
+  overflow: overlay;
+  &.scrollNo {
+    overflow: hidden;
+  }
+}
+
+button {
+  display: block;
+  background: inherit;
+}
+
+a,
+button {
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.container {
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.btn {
+  text-align: center;
+  width: 100%;
+  height: 44px;
+  padding: 8px 20px;
+  background: #4b5fa5;
+  border-radius: 12px;
+  font: 400 14px/150% 'Inter';
+  color: white;
+  transition: 0.1s;
+  &:active {
+    opacity: 0.7;
+    transform: scale(0.95);
+  }
+}
+
+.no-results-message{
+  text-align: center;
+  padding: 160px 0;
+  color: gray;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 991px) {
+  .container {
+    max-width: 720px;
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    max-width: 540px;
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 575px) {
+  .container {
+    width: 100%;
+    padding: 0 20px;
+  }
+}

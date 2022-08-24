@@ -1,0 +1,30 @@
+.marker{
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  img{
+    width: 30px;
+    height: auto;
+    animation-name: marker;
+    animation-iteration-count: infinite;
+    animation-duration: 1.5s;
+  }
+  span{
+    font-size: 12px;
+    color: #4F70E2;
+  }
+}
+@keyframes marker{
+  0%{
+    transform: scale(1);
+  }
+  // 25%{
+  //   transform: scale(1);
+  // }
+  50%{
+    transform: scale(0.7);
+  }
+  100%{
+    transform: scale(1);
+  }
+}

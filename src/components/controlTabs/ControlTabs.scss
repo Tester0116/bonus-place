@@ -1,0 +1,109 @@
+.control-tabs {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 252px;
+  border-radius: 12px;
+  background-color: #fff;
+  padding: 24px 16px;
+  .control-tabs__item {
+    transition: transform ease 0.3s;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    gap: 14px;
+    span {
+      font: 400 14px/150% "Inter";
+      color: #171717;
+    }
+    svg {
+      width: 20px;
+      height: 20px;
+      color: #d3d3d3;
+    }
+  }
+  .exit {
+    font: 400 14px/150% "Inter";
+    color: #e31b4b;
+    &::before {
+      content: "";
+      margin-bottom: 24px;
+      display: block;
+      border: 1px solid #f7f1fe;
+      width: 100%;
+    }
+  }
+  .exit-svg {
+    width: 20px;
+    height: 20px;
+    display: none;
+  }
+  .control-tabs__item--active {
+    transition: transform ease 0.3s;
+    p {
+      color: #4b5fa5;
+    }
+    svg {
+      color: #4b5fa5;
+    }
+  }
+  .logo {
+    fill: #4b5fa5;
+  }
+}
+@media (max-width: 767px) {
+  .control-tabs {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: sticky;
+    flex-direction: row;
+    z-index: 2;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    border-radius: 12px 12px 0 0;
+    height: 60px;
+    gap: 0;
+    //box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+    .control-tabs__item {
+      flex-direction: column;
+      text-align: center;
+      width: 50px;
+      gap: 0;
+      span {
+        display: none;
+      }
+    }
+    .control-tabs__item--active {
+      border-radius: 50%;
+      background-color: #FFF;
+      transform: translateY(-15px);
+      height: 50px;
+      box-shadow: 0 -5px 5px -5px #333;
+      padding-top: 10px;
+      &::after {
+        content: "";
+        display: block;
+        width: 20px;
+        height: 2px;
+        background-color: #4b5fa5;
+        margin-top: 10px;
+      }
+    }
+    .exit {
+      display: none;
+    }
+    .exit-svg {
+      display: block;
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .control-tabs{
+    //width: calc(100% - 40px);
+  }
+}

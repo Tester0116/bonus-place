@@ -1,0 +1,40 @@
+.user{
+    padding: 16px 0px 85px 0px;
+    background-color: #F5F5F5;
+    .user__inner{
+        display: flex;
+        align-items: flex-start;
+        gap: 24px;
+        .user__content{
+            padding: 24px;
+            width: 100%;
+            background-color: #FFF;
+            border-radius: 12px;
+        }
+    }
+}
+@media (max-width: 767px) {
+    .user{
+        .user__inner{
+            gap: 0;
+            flex-direction:column-reverse;
+            .user__right{
+                margin-bottom: 40px;
+            }
+        }
+    }
+}
+
+@media (max-width: 574px) {
+    .user{
+        .user__inner{
+            gap: 0;
+            .user__left{
+                width: calc(100% - 40px);
+            }
+            .user__right{
+                padding: 14px;
+            }
+        }
+    }
+}

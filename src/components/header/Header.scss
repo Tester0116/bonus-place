@@ -1,0 +1,127 @@
+$black: #171717;
+$black2: #181818;
+$gray: #98949e;
+$gray2: #d3d3d3;
+
+.header {
+  background-color: white;
+  z-index: 5;
+  top: 0;
+  width: 100%;
+  transition: all 0.2s;
+  position: sticky;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 200ms;
+  &.hide {
+    top: -151px;
+  }
+  &.show {
+    top: 0;
+  }
+
+  &__nav-block {
+    box-shadow: inset 0px -1px 0px #f7f1fe;
+  }
+  &__nav-container {
+    display: flex;
+    justify-content: space-between;
+    min-height: 42px;
+    align-items: center;
+  }
+  &__nav {
+    &-media {
+      display: flex;
+      gap: 24px;
+    }
+    &-item {
+      font-size: 15px;
+      line-height: 18px;
+      & > * {
+        color: $black;
+      }
+    }
+  }
+  &__phone-block {
+    font-size: 15px;
+    line-height: 18px;
+
+    &--text {
+      color: $gray;
+      margin-right: 6px;
+      font-weight: 400;
+    }
+    &--phone {
+      font-weight: 500;
+      color: $black;
+    }
+  }
+  @media (max-width: 991px) {
+    &__nav-block {
+      display: none;
+    }
+  }
+  @media (min-width: 991px) {
+    &__menu-mode {
+      display: none !important;
+    }
+  }
+  &__search-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 108px;
+  }
+  &__menu-mode {
+    position: fixed;
+    background-color: rgba(#000000, 0.5);
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    z-index: 1;
+    padding: 20px 20px 0px 20px;
+    transition: 0.2s;
+    .search-prompt__menu-mode{
+      z-index: 1;
+      background-color: #FFFF;
+      padding: 8px 16px 8px 20px;
+      border: 1px solid #EDF1FD;
+      box-shadow: 0px 24px 24px rgba(0, 0, 0, 0.1);
+      border-radius: 12px;
+      width: 100%;
+      ul{
+        max-height: 281px;
+        overflow-x: scroll;
+        padding-right: 20px;
+        &::-webkit-scrollbar-thumb {
+          background-color: #4F70E2;
+          border-radius: 20px;
+          border: 6px solid transparent;
+          background-clip: content-box;
+        }
+        li{
+          font: 400 14px/150% "Inter";
+          padding: 16px 0;
+          border-bottom: 1px solid #EDF1FD;
+          &:hover{
+            color: #4B5FA5;
+          }
+        }
+      }
+    }
+    &--input {
+      width: 100%;
+      padding: 10px 12px 10px 20px;
+      height: 44px;
+      background: #fbfbfb;
+      border: 1px solid #f7f1fe;
+      border-radius: 12px;
+      color: $black;
+      font: 400 15px 'Inter';
+
+      &::placeholder {
+        color: $gray;
+      }
+    }
+  }
+}

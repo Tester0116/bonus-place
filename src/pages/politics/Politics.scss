@@ -1,0 +1,26 @@
+.politics {
+    .politics__block{
+        background-color: #FFF;
+        padding: 24px 24px 96px 24px;
+        margin-bottom: 44px;
+        .politics__title{
+            font: 700 24px/29px "Inter";
+            color: #181818;
+            margin-bottom: 16px;
+        }
+        .politics__text{
+            font: 400 14px/150% "Inter";
+            color: #181818;
+        }
+    }
+}
+@media (max-width: 575px) {
+    .politics {
+        .politics__block{
+            .politics__title{
+                font: 700 20px/24px "Inter";
+            }
+        }
+    }
+    
+}

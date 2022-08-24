@@ -1,0 +1,36 @@
+.user-profile{
+    background-color: #FFF;
+    .user-profile__title{
+        color: #181818;
+        margin-bottom: 24px;
+        font: 700 24px/29px "Inter";
+    }
+    .user-profile__form{
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        .user-profile__input{
+            padding: 12px 16px;
+            max-width: 316px;
+            width: 100%;
+            height: 44px;
+            border: 1px solid #F7F1FE;
+            border-radius: 12px;
+        }
+        .flag{
+            pointer-events: none;
+        }
+        button{
+            padding: 8px 20px;
+            max-width: 316px;
+            width: 100%;
+            height: 44px;
+            background: #4B5FA5;
+            border-radius: 12px;
+            margin-top: 12px;
+            &:disabled{
+                background-color: #a7b6ee;
+            }
+        }
+    }
+}

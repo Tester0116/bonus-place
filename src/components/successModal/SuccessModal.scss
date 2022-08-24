@@ -1,0 +1,27 @@
+.success {
+  padding: 36px;
+  border-radius: 16px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 380px;
+  &__img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 18px;
+  }
+  &__title {
+    font: 700 20px/24px 'Inter';
+    color: #181818;
+    text-align: center;
+  }
+  &__btn {
+    margin-top: 32px;
+  }
+}
+@media (max-width: 575px) {
+  .success {
+    min-width: 250px;
+  }
+}

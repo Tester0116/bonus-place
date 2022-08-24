@@ -1,0 +1,44 @@
+.ticket {
+    width: 100%;
+    height: auto;
+
+    .ticket__title {
+        margin: 24px 0;
+        color: #181818;
+        font: 700 26px/29px "Inter";
+    }
+
+    .ticket__block {
+        width: 100%;
+        display: grid;
+        gap: 8px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+}
+
+@media (max-width: 991px) {
+    .ticket {
+        .ticket__block {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    }
+}
+
+
+@media (max-width: 767px) {
+    .ticket {
+        .ticket__block {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+}
+
+@media (max-width: 475px) {
+
+    .ticket {
+        .ticket__block {
+            grid-template-columns: 1fr;
+        }
+    }
+}

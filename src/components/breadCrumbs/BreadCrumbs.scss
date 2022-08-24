@@ -1,0 +1,24 @@
+.breadCrumbs{
+  padding: 24px 0;
+  font-family: Inter, sans-serif;
+  display: flex;
+  .divider{
+    margin: 0 10px;
+    color: #4F70E2;
+  }
+  .folder{
+    color: #4F70E2;
+    cursor: pointer;
+  }
+
+  @media (max-width: 767px) {
+    .breadCrumbs{
+      padding: 15px 0;
+      font-size: 15px;
+      line-height: 23px;
+    }
+    .divider{
+      margin: 0 5px;
+    }
+  }
+}
